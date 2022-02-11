@@ -11,3 +11,10 @@
     </classes>
   </test> 
 </suite> 
+
+
+<!-- 
+**To generate proper Extent/HTML Report in Jenkins, use following script in Script Console of Jenkins:
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
+
+ -->
