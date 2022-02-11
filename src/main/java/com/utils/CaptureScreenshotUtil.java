@@ -16,7 +16,7 @@ public class CaptureScreenshotUtil {
 		String destScreenFilePath ="";
 		try {
 			File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			destScreenFilePath = System.getProperty("user.dir") + File.separator+ "screens\\ExceptionScreen_"+ System.currentTimeMillis() + ".png";
+			destScreenFilePath = System.getProperty("user.dir") + File.separator+ "screens"+ File.separator+ "ExceptionScreen_"+ System.currentTimeMillis() + ".png";
 			System.out.println("Screen shot path: "+ destScreenFilePath);
 			FileUtils.copyFile(srcFile, new File(destScreenFilePath));			
 		}catch (Exception e) {

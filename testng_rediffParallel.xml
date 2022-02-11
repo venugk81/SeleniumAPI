@@ -4,10 +4,13 @@
   <test name="Test">
     <classes>
       <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest"/>
+      
+      <!-- 
       <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2"/>
        <class name="com.tests.Regression.Inventory.CreateInventory2"/>
       <class name="com.tests.Regression.Inventory.CreateInventory"/>
       <class name="com.tests.Regression.Inventory.CreateInventory3"/>
+       -->
     </classes>
   </test> 
 </suite> 
