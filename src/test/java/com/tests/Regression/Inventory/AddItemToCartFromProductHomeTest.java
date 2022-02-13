@@ -34,8 +34,7 @@ public class AddItemToCartFromProductHomeTest extends BasePage{
 		extentTest = ThreadLocalExtentReportTest.getExtentTestRef("AddItemToCartFromProductHomeTest 1");
 		extentTest.assignAuthor("Gopi").assignDevice("Firefox").assignCategory("Smoke");
 		driver = getWebdriverInstance();
-		registerPage = new RegisterUserPage(driver, extentTest);
-				
+		registerPage = new RegisterUserPage(driver, extentTest);				
 	}
 	
 	@Test

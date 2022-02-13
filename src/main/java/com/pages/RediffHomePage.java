@@ -30,11 +30,13 @@ public class RediffHomePage{
 		PageFactory.initElements(driver, this);
 		page = new BasePage();		
 		page.isElementDisplayed(lnkOnlineShopping, 10);
+		this.extentTest.pass("Home Page is loaded");
 	}
 	
 	
 	public OnlineShoppingPage navigateToOnlineShoppingPage() {
 		page.click(lnkOnlineShopping, "Online Shopping Link");
+		extentTest.pass("clicked on Online Shopping Link");
 		return new OnlineShoppingPage(driver, extentTest);
 	}
 	

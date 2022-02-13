@@ -46,8 +46,7 @@ public class RegisterUserPage{
 		driver = _driver;
 		this.extentTest = extentTest;
 		PageFactory.initElements(driver, this);
-		page = new BasePage();
-		
+		page = new BasePage();		
 	}
 	
 	public void signupRegistrationForm() {
@@ -56,6 +55,7 @@ public class RegisterUserPage{
 		chkNoAlternateEmail.click();
 		page.selectByVisibleText(lstDayDOB, "09");		
 		page.selectByVisibleText(lstCountry, "Madagascar");
+		extentTest.pass("User signed up successfully");
 	}
 	
 	public String validateLoginTitle() {

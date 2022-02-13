@@ -62,7 +62,8 @@ public class OnlineShoppingPage{
 	
 	public void SelectProductByCategory(String category, String subCategory) {
 		try {
-			selectFirstProductBySubcatogory(category, subCategory);			
+			selectFirstProductBySubcatogory(category, subCategory);		
+			extentTest.pass("Selected product: "+ category + " and subcategory: "+ subCategory);
 		}catch(Exception oExp) {
 			page.attachScreenshotToExtentReport(extentTest);
 			Assert.fail("Failed to select first product by category and sub-category");
@@ -81,7 +82,8 @@ public class OnlineShoppingPage{
 			page.click(imgFirstProductFromSubCategory, "Select First Product");		
 			page.isElementDisplayed(divProductDetailsHomePage, 10);			
 		}catch(Exception oExp) {
-			page.attachScreenshotToExtentReport(extentTest);
+//			page.attachScreenshotToExtentReport(extentTest);
+			extentTest.fail("Failed to select first prodcut by category");
 			Assert.fail("Failed to navigate to first product by category and sub-category");
 		}
 	}
