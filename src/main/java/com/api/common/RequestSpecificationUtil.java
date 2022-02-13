@@ -20,7 +20,7 @@ public class RequestSpecificationUtil {
 				.log().all()
 				.accept(ContentType.JSON)
 				.contentType(ContentType.JSON)
-				.baseUri("https://reqres.in/api")
+//				.baseUri("https://reqres.in/api")
 				.config(ConfigFactory.getDefaultConfig());		
 		return reqSpec;
 				
@@ -31,7 +31,7 @@ public class RequestSpecificationUtil {
 				.log(LogDetail.ALL)
 				.setContentType(ContentType.JSON)
 				.setAccept(ContentType.JSON)
-				.setBaseUri("https://reqres.in/api")
+//				.setBaseUri("https://reqres.in/api")
 				.setConfig(ConfigFactory.getDefaultConfig())			//Here Set methods are used to configure 			
 				.build();			
 		return reqSpec;
@@ -49,8 +49,7 @@ public class RequestSpecificationUtil {
 		reqSpec = RestAssured.given()
 				.log().all()
 				.accept(ContentType.JSON)
-				.contentType(ContentType.JSON)				
-				.baseUri("https://reqres.in/api")
+				.contentType(ContentType.JSON)	
 				.config(ConfigFactory.getDefaultConfig());		
 		return reqSpec;
 				

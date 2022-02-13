@@ -1,39 +1,41 @@
 package com.api.common.Inventory;
 
-import java.util.Map;
+import org.testng.Assert;
 
-import org.asynchttpclient.request.body.Body;
+import com.api.common.BaseAPI;
 import com.api.common.RequestSpecificationUtil;
-import com.utils.ReadTokensFromFile;
+import com.aventstack.extentreports.ExtentTest;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class Inventory {
+public class Inventory extends BaseAPI{
 
-	Map<String, String> tokens;
-
-	Inventory() {
-		tokens = ReadTokensFromFile.getTokens();
-		RestAssured.baseURI = "";
-	}
 	
-	public void prepareNewInventoryPojo() {
-		
+	ExtentTest extentTest;
+	
+	public Inventory(ExtentTest extentTest){
+		super();
+		RestAssured.baseURI = "https://api.github.com";		
+		this.extentTest = extentTest;		
 	}
 
 	
-	public Response createInventory(Body body) {
-		RestAssured.basePath = "";
-		Response response = RestAssured.given()
-					//.queryParam(, parameterValues)					
+	public Response createInventory() throws Exception{
+		RestAssured.basePath = "/users/rest-assured";
+		Response response = null; 
+		try {
+			response= RestAssured.given()				
 					.spec(RequestSpecificationUtil.gettReqSpecificationWithAuth())
-					.body(body)
+//					.body(body)
 				.when()
-					.post()
+					.get()
 				.then()
+					.log().all()
 					.statusCode(201)
-					.extract().response();
-
+					.extract().response();			
+		}catch(Exception oExp) {
+			Assert.fail("Failed to create a new inventory: " + oExp.getMessage());
+		}		
 		return response;
 	}
 

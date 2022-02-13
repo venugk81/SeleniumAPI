@@ -32,8 +32,7 @@ public class ThreadLocalExtentReportTest {
 	public static ExtentTest getExtentTestRef(String strTestName) {
 		extentTest = ThreadLocal.withInitial(()-> getExtentReporter().createTest(strTestName));
 		return extentTest.get();
-	}
-	
+	}	
 
 	public static void flushReport() {
 		extReports.flush();

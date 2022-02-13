@@ -12,6 +12,15 @@
           <include name="afterSuite"/>
         </methods>
       </class> <!-- com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest -->
+      <class name="com.tests.api.CreateInventoryRecord">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="testing"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.tests.api.CreateInventoryRecord -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

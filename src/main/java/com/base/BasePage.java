@@ -1,26 +1,18 @@
 package com.base;
 
 import java.time.Duration;
-import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.events.WebDriverListener;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.config.ConfigProp;
 import com.utils.CaptureScreenshotUtil;
-import com.utils.ThreadLocalExtentReportTest;
-import com.utils.WebDriverEventListenerUtil;
 
 
 public class BasePage extends BaseClass{

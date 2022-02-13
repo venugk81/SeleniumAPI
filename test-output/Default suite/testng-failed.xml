@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest">
+      <class name="com.tests.api.CreateInventoryRecord">
         <methods>
-          <include name="setUp"/>
-          <include name="afterTest"/>
+          <include name="aftermethod"/>
           <include name="beforeSuite"/>
-          <include name="test"/>
+          <include name="beforeMethod"/>
+          <include name="testing"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest -->
+      </class> <!-- com.tests.api.CreateInventoryRecord -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
