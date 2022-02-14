@@ -1,0 +1,6 @@
+com\tests\Regression\Inventory\CreateInventory2.class
+com\tests\api\CreateInventoryRecord.class
+com\tests\Regression\Inventory\CreateInventory.class
+com\tests\Regression\Inventory\AddItemToCartFromProductHomeTest2.class
+com\tests\Regression\Inventory\AddItemToCartFromProductHomeTest.class
+com\tests\Regression\Inventory\CreateInventory3.class

@@ -10,7 +10,6 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.base.BasePage;
-import com.utils.ReportExtentStep;
 
 
 public class OnlineShoppingPage{
@@ -84,9 +83,9 @@ public class OnlineShoppingPage{
 			page.isElementDisplayed(divProductDetailsHomePage, 10);			
 		}catch(Exception oExp) {
 //			page.attachScreenshotToExtentReport(extentTest);
-//			extentTest.fail("Failed to select first prodcut by category");
+			extentTest.fail("Failed to select first prodcut by category");
 //			Assert.fail("Failed to navigate to first product by category and sub-category");
-			ReportExtentStep.failStep("Failed to select first prodcut by category", oExp.getMessage(), extentTest);
+			
 		}
 	}
 	

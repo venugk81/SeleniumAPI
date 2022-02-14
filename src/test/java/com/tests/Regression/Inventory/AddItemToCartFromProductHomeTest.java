@@ -15,7 +15,6 @@ import com.pages.OnlineShoppingPage;
 import com.pages.RediffHomePage;
 import com.pages.RegisterUserPage;
 import com.utils.CaptureScreenshotUtil;
-import com.utils.ReportExtentStep;
 import com.utils.ThreadLocalExtentReportTest;
 
 public class AddItemToCartFromProductHomeTest extends BasePage{
@@ -48,8 +47,7 @@ public class AddItemToCartFromProductHomeTest extends BasePage{
 		extentTest.pass("Navigated toOnline Shopping successfully");
 		shoppingPage.SelectProductByCategory("Bags and Luggage", "Travel Bags ");
 		extentTest.pass("Selected products by Category and Sub-Category");
-					Assert.fail("===========Script failed explicitly- AddItemToCartFromProductHomeTest");
-					
+					Assert.fail("===========Script failed explicitly- AddItemToCartFromProductHomeTest");					
 	}
 	
 	@AfterMethod
