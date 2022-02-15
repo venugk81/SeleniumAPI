@@ -47,7 +47,7 @@ public class AddItemToCartFromProductHomeTest extends BasePage{
 		extentTest.pass("Navigated toOnline Shopping successfully");
 		shoppingPage.SelectProductByCategory("Bags and Luggage", "Travel Bags ");
 		extentTest.pass("Selected products by Category and Sub-Category");
-					Assert.fail("===========Script failed explicitly- AddItemToCartFromProductHomeTest");					
+//					Assert.fail("===========Script failed explicitly- AddItemToCartFromProductHomeTest");					
 	}
 	
 	@AfterMethod
