@@ -22,6 +22,7 @@ public class AddItemToCartFromProductHomeTest extends BasePage{
 	RegisterUserPage registerPage;
 	RediffHomePage homePage;
 	OnlineShoppingPage shoppingPage;
+	
 	WebDriver driver;
 	ExtentTest extentTest;
 	

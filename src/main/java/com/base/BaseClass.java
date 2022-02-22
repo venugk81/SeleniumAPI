@@ -37,6 +37,7 @@ public class BaseClass {
 	@AfterSuite
 	public void afterSuite() {
 		ThreadLocalExtentReportTest.flushReport();
+		driver.quit();
 	}
 	
 	
