@@ -3,6 +3,24 @@
 <suite thread-count="3" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="3" parallel="classes" name="Test(failed)">
     <classes>
+      <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="test"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest -->
+      <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2">
+        <methods>
+          <include name="test"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2 -->
       <class name="com.tests.api.CreateInventoryRecord">
         <methods>
           <include name="aftermethod"/>

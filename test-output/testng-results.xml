@@ -1,135 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-15T16:43:01 IST" name="Suite" finished-at="2022-02-15T16:43:27 IST" duration-ms="25532">
+  <suite started-at="2022-03-08T17:12:02 IST" name="Default suite" finished-at="2022-03-08T17:12:02 IST" duration-ms="56">
     <groups>
     </groups>
-    <test started-at="2022-02-15T16:43:01 IST" name="Test" finished-at="2022-02-15T16:43:27 IST" duration-ms="25532">
-      <class name="com.tests.api.CreateInventoryRecord">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.tests.api.CreateInventoryRecord@1a942c18]" started-at="2022-02-15T16:43:01 IST" name="beforeMethod" finished-at="2022-02-15T16:43:02 IST" duration-ms="702" status="PASS">
+    <test started-at="2022-03-08T17:12:02 IST" name="Default test" finished-at="2022-03-08T17:12:02 IST" duration-ms="56">
+      <class name="interview.StringPermutation">
+        <test-method signature="RepeatingNumbers()[pri:0, instance:interview.StringPermutation@306e95ec]" started-at="2022-03-08T17:12:02 IST" name="RepeatingNumbers" finished-at="2022-03-08T17:12:02 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testing()[pri:0, instance:com.tests.api.CreateInventoryRecord@1a942c18]" started-at="2022-02-15T16:43:02 IST" name="testing" finished-at="2022-02-15T16:43:03 IST" duration-ms="1645" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <201> but was <200>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <201> but was <200>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
-at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at com.api.common.Inventory.Inventory.createInventory(Inventory.java:34)
-at com.tests.api.CreateInventoryRecord.testing(CreateInventoryRecord.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- RepeatingNumbers -->
+        <test-method signature="print100NoLoops()[pri:0, instance:interview.StringPermutation@306e95ec]" started-at="2022-03-08T17:12:02 IST" name="print100NoLoops" finished-at="2022-03-08T17:12:02 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testing -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:com.tests.api.CreateInventoryRecord@1a942c18]" started-at="2022-02-15T16:43:03 IST" name="aftermethod" finished-at="2022-02-15T16:43:03 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testing status=FAILURE method=CreateInventoryRecord.testing()[pri:0, instance:com.tests.api.CreateInventoryRecord@1a942c18] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- print100NoLoops -->
+        <test-method signature="numberRepeatingIndexesFirstTime()[pri:0, instance:interview.StringPermutation@306e95ec]" started-at="2022-03-08T17:12:02 IST" name="numberRepeatingIndexesFirstTime" finished-at="2022-03-08T17:12:02 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aftermethod -->
-      </class> <!-- com.tests.api.CreateInventoryRecord -->
-      <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest@6574a52c]" started-at="2022-02-15T16:43:01 IST" name="beforeSuite" finished-at="2022-02-15T16:43:01 IST" duration-ms="308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest@6574a52c]" started-at="2022-02-15T16:43:01 IST" name="setUp" finished-at="2022-02-15T16:43:10 IST" duration-ms="9125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest@6574a52c]" started-at="2022-02-15T16:43:10 IST" name="test" finished-at="2022-02-15T16:43:25 IST" duration-ms="15180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest@6574a52c]" started-at="2022-02-15T16:43:25 IST" name="afterTest" finished-at="2022-02-15T16:43:27 IST" duration-ms="1189" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test status=SUCCESS method=AddItemToCartFromProductHomeTest.test()[pri:0, instance:com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest@6574a52c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest@6574a52c]" started-at="2022-02-15T16:43:27 IST" name="afterSuite" finished-at="2022-02-15T16:43:27 IST" duration-ms="347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- numberRepeatingIndexesFirstTime -->
+      </class> <!-- interview.StringPermutation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 15 16:43:01 IST 2022</td>
+<td>Started on:</td><td>Wed Mar 02 18:10:00 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25532 ms)</td>
+<tr><td>Total time:</td><td>314 seconds (314874 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -74,6 +74,39 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest.test()'><b>test</b><br>Test class: com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest</td>
+<td><div><pre>java.lang.AssertionError: Failed to click on the element: Home
+	at com.base.BasePage.click(BasePage.java:67)
+	at com.pages.RegisterUserPage.navigateToRediffHome(RegisterUserPage.java:66)
+	at com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest.test(AddItemToCartFromProductHomeTest.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1291939841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1291939841'><pre>java.lang.AssertionError: Failed to click on the element: Home
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.base.BasePage.click(BasePage.java:67)
+	at com.pages.RegisterUserPage.navigateToRediffHome(RegisterUserPage.java:66)
+	at com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest.test(AddItemToCartFromProductHomeTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>301</td>
+<td>com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest@6c1a5b54</td></tr>
 <tr>
 <td title='com.tests.api.CreateInventoryRecord.testing()'><b>testing</b><br>Test class: com.tests.api.CreateInventoryRecord</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
@@ -113,8 +146,8 @@ Expected status code &lt;201&gt; but was &lt;200&gt;.
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace75064156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace75064156'><pre>java.lang.AssertionError: 1 expectation failed.
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1810216269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810216269'><pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;201&gt; but was &lt;200&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -179,21 +212,41 @@ Expected status code &lt;201&gt; but was &lt;200&gt;.
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </pre></div></td>
-<td>1</td>
-<td>com.tests.api.CreateInventoryRecord@1a942c18</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>9</td>
+<td>com.tests.api.CreateInventoryRecord@55a147cc</td></tr>
 <tr>
-<td title='com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest.test()'><b>test</b><br>Test class: com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest</td>
-<td></td>
-<td>15</td>
-<td>com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest@6574a52c</td></tr>
+<td title='com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2.test()'><b>test</b><br>Test class: com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2</td>
+<td><div><pre>java.lang.AssertionError: Failed to click on the element: Home
+	at com.base.BasePage.click(BasePage.java:67)
+	at com.pages.RegisterUserPage.navigateToRediffHome(RegisterUserPage.java:66)
+	at com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2.test(AddItemToCartFromProductHomeTest2.java:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1839178500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1839178500'><pre>java.lang.AssertionError: Failed to click on the element: Home
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.base.BasePage.click(BasePage.java:67)
+	at com.pages.RegisterUserPage.navigateToRediffHome(RegisterUserPage.java:66)
+	at com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2.test(AddItemToCartFromProductHomeTest2.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>301</td>
+<td>com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2@71ba6d4e</td></tr>
 </table><p>
 </body>
 </html>

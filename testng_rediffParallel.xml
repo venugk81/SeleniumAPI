@@ -6,10 +6,10 @@
       <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest"/>
        
       
-      <!-- 
+      
       <class name="com.tests.api.CreateInventoryRecord"/>
       <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2"/>
-       <class name="com.tests.Regression.Inventory.CreateInventory2"/>
+<!--        <class name="com.tests.Regression.Inventory.CreateInventory2"/>
       <class name="com.tests.Regression.Inventory.CreateInventory"/>
       <class name="com.tests.Regression.Inventory.CreateInventory3"/>
        -->

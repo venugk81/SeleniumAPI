@@ -48,7 +48,7 @@ public class AddItemToCartFromProductHomeTest extends BasePage{
 		extentTest.pass("Navigated toOnline Shopping successfully");
 		shoppingPage.SelectProductByCategory("Bags and Luggage", "Travel Bags ");
 		extentTest.pass("Selected products by Category and Sub-Category");
-//					Assert.fail("===========Script failed explicitly- AddItemToCartFromProductHomeTest");					
+//		Assert.fail("===========Script failed explicitly- AddItemToCartFromProductHomeTest");					
 	}
 	
 	@AfterMethod
@@ -58,8 +58,8 @@ public class AddItemToCartFromProductHomeTest extends BasePage{
             extentTest.fail(result.getThrowable());
             extentTest.addScreenCaptureFromPath(screenShotPath);    
             
-            ////OR call like this:
-//            attachScreenshotToExtentReport(extentTest, result);
+////		OR call like this:
+//          attachScreenshotToExtentReport(extentTest, result);
         }
 		closeDriver();
 	}
